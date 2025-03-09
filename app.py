@@ -36,7 +36,7 @@ def predict(data: ModelInput):
     
     # Create feature array
     input_data = np.array([
-        normalized_price, data.Month, data.Category_Beauty, data.Category_Books,
+        normalized_price,data.Category_Beauty, data.Category_Books,
         data.Category_Electronics, data.Category_Fashion, data.Category_Home,
         data.Level_high, data.Level_low, data.Level_normal
     ]).reshape(1, -1)
