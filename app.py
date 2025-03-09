@@ -12,7 +12,6 @@ app = FastAPI()
 # Define input schema using Pydantic
 class ModelInput(BaseModel):
     Price: float
-    Month: int
     Category_Beauty: int
     Category_Books: int
     Category_Electronics: int
