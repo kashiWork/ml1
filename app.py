@@ -22,8 +22,8 @@ class ModelInput(BaseModel):
     Level_normal: int
 
 # MinMax normalization for price
-PRICE_MIN = 0  # Set actual min price from training data
-PRICE_MAX = 1000  # Set actual max price from training data
+PRICE_MIN = 2300  # Set actual min price from training data
+PRICE_MAX = 150000  # Set actual max price from training data
 
 def normalize_price(price):
     return (price - PRICE_MIN) / (PRICE_MAX - PRICE_MIN)
